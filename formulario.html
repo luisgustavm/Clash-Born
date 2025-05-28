@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscrição - Clash Born</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+<br>
+<br>
+  <a href="menu.html" class="voltar-btn">← Voltar</a>
+  <div class="container">
+    <h1>Processo de Inscrição</h1>
+    
+    <div class="inscricao-layout">
+      <div class="pagamento-box">
+        <div class="pagamento-box">
+  <h3>Pagamento</h3>
+
+  <label for="nomeCartao">Nome no Cartão</label>
+  <input type="text" id="nomeCartao" placeholder="Digite o nome no cartão" />
+
+  <label for="numeroCartao">Número do Cartão</label>
+  <input type="text" id="numeroCartao" placeholder="Digite o número do cartão" />
+
+  <label for="cvvCartao">CVV</label>
+  <input type="text" id="cvvCartao" placeholder="Digite o CVV" maxlength="4" />
+
+  <button id="btnPagar">Pagar</button>
+
+  <p id="msgPagamento" style="display:none; color:#0f0; margin-top:10px;">
+    Pagamento concluído com sucesso, pode continuar com a inscrição!
+  </p>
+</div>
+      </div>
+
+      <form id="inscricaoForm">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+        
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com" />
+        
+        <label for="idJogo">ID do Jogo</label>
+        <input type="text" id="idJogo" name="idJogo" required placeholder="Seu ID no jogo" />
+        
+        <button type="submit">Inscreva-se</button>
+      </form>
+    </div>
+
+    <div class="message" id="mensagemConfirmacao" style="display:none;">
+      <p>Pagamento efetuado com sucesso! Aguarde o e-mail de confirmação com o link do grupo.</p>
+    </div>
+
+    <div class="confirmados-box">
+      <h3>Inscrições Confirmadas</h3>
+      <ul id="listaConfirmados"></ul>
+    </div>
+  </div>
+
+  <script src="script2.js" defer></script>
+</body>
+</html>

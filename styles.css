@@ -1,0 +1,692 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #0d0d40;
+  color: white;
+}
+.body2 {
+  background-color: #d400ff;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #1b2a48 0%, #1c53b3 100%);
+  padding: 5px 40px;
+  border-bottom: 5px solid rgb(27, 255, 244);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.logo1 {
+  position: absolute;
+  top: -30px;
+  left: 49%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo1 img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.logo1 span {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.coroa {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.coroa .imagem-coroa {
+  position: absolute;
+  top: 10px;
+  left: 47%;
+  transform: translateX(-50%) rotate(15deg);
+  width: 28px;
+  height: auto;
+  pointer-events: none;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(18, 255, 239);
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.video-container {
+  border: 3px solid #a045ff;
+  border-radius: 12px;
+  max-width: 100%;     /* Limita a largura máxima ao tamanho da tela */
+  margin: 20px auto;   /* Centraliza horizontalmente e dá margem vertical */
+  width: 90vw;         /* Largura quase toda da viewport */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;         /* Preenche toda a largura do container */
+  height: auto;        /* Altura automática para manter proporção */
+  display: block;
+  border-radius: 12px;
+}
+
+
+footer {
+  background-color: #000d3a;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 5px solid rgb(14, 255, 227);
+  font-size: 12px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.rules-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #00113a;
+  flex-wrap: wrap;
+  gap: 40px;
+  min-height: 80vh;
+}
+
+.rules-box {
+  background-color: #0d0d40;
+  border-radius: 16px;
+  padding: 50px;
+  border: 3px solid #663cff;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+.rules-box2 {
+  background-color: #0d0d40;
+  border-radius: 16px;
+  padding: 50px;
+  border: 3px solid #006bb2;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+.rules-box3 {
+  background-color: #0d0d40;
+  border-radius: 16px;
+  padding: 50px;
+  border: 3px solid #001ca8;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+.rules-box3 {
+  background-color: #0d0d40;
+  border-radius: 16px;
+  padding: 50px;
+  border: 3px solid #008190;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+
+.rules-title {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.premiacao {
+    text-align: center;
+}
+.rules-list {
+    text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  list-style: none;
+  padding-left: 0;
+}
+
+.rules-list li {
+  margin-bottom: 10px;
+}
+
+.rules-image {
+  max-width: 300px;
+  flex: 1;
+}
+
+.rules-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.mídia-lado-a-lado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.mídia-lado-a-lado .imagem {
+  width: 30%;
+}
+
+.mídia-lado-a-lado .video {
+  width: 60%;
+}
+
+.nome {
+  width: 70px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.qr-code {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.qr-code img {
+  width: 150px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-box {
+  background-color: #3165cc95;
+  padding: 40px;
+  border: 3px solid #9f45ff6f;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+form button:hover {
+  background-color: #484848;
+}
+
+.signup-link {
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+.signup-link a {
+  color: #00fff0;
+  text-decoration: none;
+}
+
+.login-fundo {
+  background-image: url('img/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#perfilContainer {
+  position: fixed;
+  top: 620px;
+  right: 20px;
+  text-align: center;
+  z-index: 1000;
+  color: #000;
+}
+
+#avatarCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#avatarCircle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#perfilCanvas {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display: none;
+  border: 2px solid #14fff1;
+  background-color: #004573;
+  z-index: 1001;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000;
+  padding: 20px;
+  width: 320px;
+  height: 440px;
+}
+
+/* ----------- Inscrição Layout ----------- */
+.inscricao-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Caixa pagamento */
+.pagamento-box {
+  background-color: #00000082;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000080;
+  text-align: center;
+  user-select: none;
+}
+
+.pagamento-box h3 {
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+}
+
+/* Botão confirmar pagamento */
+#confirmarPagamento {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+#confirmarPagamento:hover {
+  background-color: #00cccc;
+}
+
+/* Formulário inscrição */
+form#inscricaoForm {
+  background: #2e2f2abe;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 0.65rem;
+  color: #ffffff;
+  text-shadow: 0 0 8px #ffffff;
+  user-select: none;
+}
+
+form input {
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  border-radius: 8px;
+  background: #111;
+  color: #eee;
+  border: none;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+form input:focus {
+  border: 2px solid #66ffff;
+}
+
+/* Botão enviar */
+form button[type="submit"] {
+  margin-top: 10px;
+  padding: 14px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.75rem;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+form button[type="submit"]:hover {
+  background: #e9efef;
+}
+
+/* Mensagem de confirmação */
+.message {
+  background: #00ffcc44;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* Caixa inscrições confirmadas */
+.confirmados-box {
+  background-color: #00000082;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000080;
+  margin-top: 30px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.pagamento-box {
+  background-color: #00000082;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000080;
+  max-width: 320px;
+  margin: 0 auto 20px auto;
+}
+
+.pagamento-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.pagamento-box input {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.pagamento-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagamento-box button:hover {
+  background-color: #0ff;
+}
+
+.confirmados-box h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: center;
+  user-select: none;
+}
+
+/* Lista de inscritos */
+#listaConfirmados {
+  list-style-type: none;
+  font-size: 0.7rem;
+  padding-left: 0;
+}
+
+#listaConfirmados li {
+  border-bottom: 1px solid #00ffff44;
+  padding: 6px 0;
+  user-select: none;
+}
+
+/* Scrollbar customizada */
+#listaConfirmados::-webkit-scrollbar {
+  width: 6px;
+}
+
+#listaConfirmados::-webkit-scrollbar-thumb {
+  background-color: #00ffffaa;
+  border-radius: 3px;
+}
+
+/* Layout em linha para telas maiores que 600px */
+@media (min-width: 600px) {
+  .inscricao-layout {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .pagamento-box, form#inscricaoForm {
+    flex: 1;
+  }
+
+  .message {
+    max-width: 480px;
+    margin: 20px auto;
+  }
+}
+/* ----------- Responsivo para celular ----------- */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img,
+  .logo1 img {
+    width: 120px;
+    margin-right: 5px;
+  }
+
+  .logo1 {
+    position: static !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+
+  .inscricao-layout {
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+    padding: 0 10px !important;
+    margin-left: 0 !important;
+  }
+
+  .pagamento-box,
+  .confirmados-box {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 15px !important;
+    box-sizing: border-box;
+  }
+
+  .confirmados-box {
+    margin-top: 10px !important;
+  }
+
+  .login-container {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 20px auto !important;
+    width: 90% !important;
+    max-width: 400px !important;
+  }
+
+  form input {
+    font-size: 1rem !important;
+    padding: 12px !important;
+  }
+
+  form button {
+    font-size: 1rem !important;
+    padding: 14px !important;
+  }
+
+  .conteudo-principal {
+    max-width: 100% !important;
+    padding: 0 10px !important;
+  }
+
+  #perfilContainer {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 20px auto !important;
+  }
+
+  #avatarCircle {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .button-pagamento {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .rules-section {
+    padding: 30px 10px;
+  }
+
+  .rules-box,
+  .rules-box2,
+  .rules-box3 {
+    padding: 30px 20px;
+  }
+}
